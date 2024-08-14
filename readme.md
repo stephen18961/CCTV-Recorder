@@ -11,14 +11,6 @@ This project provides a Python application for recording RTSP streams using FFmp
 ## Requirements
 
 - Docker
-- Docker Compose
-
-## Project Structure
-
-- `Dockerfile`: Docker configuration to build the application image.
-- `requirements.txt`: Python dependencies for the application.
-- `record_rtsp.py`: Python script that records the RTSP stream.
-- `docker-compose.yml`: Docker Compose configuration for running multiple instances.
 
 ## Setup
 
