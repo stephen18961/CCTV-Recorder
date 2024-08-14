@@ -1,0 +1,24 @@
+services:
+  cctv1:
+    network_mode: host
+    build: .
+    environment:
+      - RTSP_URL=rtsp://host.docker.internal:8554/cctv_c3
+      - DURATION=60
+    volumes:
+      - ./videos/cctv1:/app/videos
+    deploy:
+      replicas: 1
+
+  # cctv2:
+  #   network_mode: host
+  #   build: .
+  #   environment:
+  #     - RTSP_URL=rtsp://your_camera_ip2:port/stream
+  #     - DURATION=60
+  #   volumes:
+  #     - ./videos/cctv2:/app/videos
+  #   deploy:
+  #     replicas: 1
+
+  # Add more CCTV services as needed
